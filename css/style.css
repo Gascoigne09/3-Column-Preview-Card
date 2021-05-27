@@ -1,0 +1,157 @@
+/* ----- FONT IMPORTS AND DEFAULTS ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ----- SECTION CONTAINER ----- */
+
+.travel-type {
+    box-shadow: 0 0 10px 5px hsla(0, 0%, 100%, 0.75);
+    width: 90%;
+    margin: 3rem auto;
+    border-radius: 12px;
+}
+
+/* ----- DEFAULT CARD DESIGNS AND FONTS ----- */
+
+.card-container {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.card-content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+img {
+    margin-top: 3rem;
+}
+
+.card-title {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: white; 
+    margin-top: 2rem;
+    font-size: 45px;
+    text-shadow: 1px 0 hsl(0, 0%, 95%);
+}
+
+.card-description {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+/* ----- INDIVIDUAL STYLES ----- */
+
+/* SEDANS */
+
+.sedans-card {
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* SUV */
+
+.suv-card {
+    background-color: hsl(184, 100%, 22%);
+}
+
+/* LUXURY */
+
+.luxury-card {
+    background: hsl(179, 100%, 13%);
+}
+
+/* ----- BUTTONS ----- */
+
+button {
+    border: none;
+    background: hsla(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    box-shadow: 0 0 1px 1px hsl(0, 0%, 95%);
+    border: 2px solid transparent;
+}
+
+.button-sedan {
+    color: hsl(31, 77%, 52%);
+}
+
+.button-suv {
+    color: hsl(184, 100%, 22%);
+}
+git
+.button-luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+/*----- MEDIA QUERIES ----- */
+
+@media only screen and (min-width: 940px) {
+
+/* ----- SECTION CONTAINER ----- */
+
+    .travel-type {
+        display: flex;
+        justify-content: center;
+    }
+
+/* ----- DEFAULT CARD DESIGNS AND FONTS ----- */
+
+    .card-container {
+        max-width: 300px;
+        margin: 0;
+    }
+
+/* ----- INDIVIDUAL STYLES ----- */
+
+/* SEDANS */
+
+    .sedans-card {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 12px;
+    }
+
+/* LUXURY */
+
+    .luxury-card {
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+/* ----- BUTTONS ----- */
+
+    button {
+        margin-top: 6rem;
+    }
+
+    .button-sedan:hover, .button-suv:hover, .button-luxury:hover {
+        border: 2px solid white;
+        color: white;
+        transition: 1s;
+        cursor: pointer;
+        background: transparent;
+    }
+}
+
+
+
+
+
+
